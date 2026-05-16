@@ -133,7 +133,7 @@ if st.button("✨ 一鍵生成客製化关怀图片", type="primary", width="str
             # 🎨 【第二階段】：連線真實 Google Imagen 3 繪圖
             with st.spinner("🎨 第二階段：Gemini 影像模型 (Imagen 3) 正在構圖與繪製高畫質卡片..."):
                 image_response = client.models.generate_images(
-                    model="imagen-3.0",
+                    model="imagen-3",
                     prompt=real_english_prompt,
                     config=types.GenerateImagesConfig(
                         number_of_images=1,
