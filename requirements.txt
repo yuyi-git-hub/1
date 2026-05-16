@@ -1,1 +1,2 @@
-GEMINI_API_KEY = "AIzaSyDBbiBOpJHint3YoxhLTFfXD4LVFjoyHlc"
+google-genai
+Pillow
