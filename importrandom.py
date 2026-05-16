@@ -117,7 +117,7 @@ if st.button("✨ 一鍵生成客製化关怀图片", type="primary", width="str
                 )
 
                 text_response = client.models.generate_content(
-                    model="gemini-3-flash",
+                    model="gemini-2.5-flash",
                     contents=user_tags_payload,
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
