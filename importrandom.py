@@ -33,7 +33,11 @@ if not api_key:
     st.warning("⚠️ 偵測到未設定 API 金鑰，請在下方暫時輸入您的 Gemini API Key 以進行測試：")
     api_key = st.text_input("輸入您的 Gemini API Key：", type="password")
 
-client = genai.Client(api_key=api_key) if api_key else None
+client = (
+    genai.Client(api_key=api_key, http_options={"api_version": "v1beta"})
+    if api_key
+    else None
+)
 # ====================================================
 
 # 1. 今日速報
